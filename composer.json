@@ -1,0 +1,28 @@
+{
+    "name": "softwaregalaxy/appsowl",
+    "description": "POS",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Appsowl",
+            "email": "info@appsowl.com"
+        }
+    ],
+    "require": {
+        "firebase/php-jwt": "^5.0",
+        "kwn/number-to-words": "^1.6",
+        "tecnickcom/tcpdf": "^6.2"
+    },
+    "autoload": {
+        "classmap": [
+            "engine"
+        ],
+        "files": [
+            "engine/helpers.php"
+        ]
+    },
+    "config": {
+        "preferred-install": "dist"
+    }
+}

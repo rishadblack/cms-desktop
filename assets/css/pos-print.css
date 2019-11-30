@@ -1,0 +1,110 @@
+@media print{
+#pos-print .pos-logo{
+	width: 100%;
+	display: block;
+	float:center;
+	border-bottom: 1px solid #EEE;
+}
+
+#pos-print .pos-logo p{
+	font-size: 32px;
+	color: #666;
+	margin: 2px 0px;
+	line-height: 1.2em;
+}
+
+#pos-print .pos-header{
+	min-height: 80px;
+}
+
+#pos-print .pos-header p{
+	font-family: sans-serif; 
+	font-size: 12px;
+	color: black;
+	text-align: center;
+}
+
+#pos-print .pos-header .pos-header-info{
+	margin-top: -10px;
+}
+
+#pos-print .pos-header .pos-header-info p{
+	font-size:13px;
+	text-align: left;
+}
+
+table { border-collapse: collapse; }
+table td, table th { border: 1px solid black; padding: 2.5px; }
+
+#pos-product-table{
+	clear: both; 
+	width: 100%; 
+	margin: 30px 0 0 0; 
+	border: 0;
+}
+
+#pos-product-table tr.item-row td { 
+	border: 0; 
+	vertical-align: top; 
+	text-align: center; 
+	border-bottom: 1px dashed black;
+}
+
+#pos-product-table td.item-name {
+	width: 120px; 
+}
+#pos-product-table td.total-line {
+	border: 0; 
+	text-align: right; 
+}
+#pos-product-table td.total-value { 
+	border: 0; 
+	padding: 2.5px; 
+	text-align: center; 
+}
+
+#pos-product-table td.total-text-value { 
+	border-top: 1px solid black; 
+	border-bottom: 1px solid black; 
+	border-left: 0; 
+	border-right: 0; 
+	padding: 2.5px; 
+	text-align: left; 
+}
+
+#pos-product-table tr.total-last-row { 
+	border-bottom: 1px solid black; 
+}
+
+#pos-product-table td.balance { 
+	background: #eee; 
+}
+
+#pos-print .legalcopy p{
+	text-align: center;
+	line-height: 0 em;
+}
+
+#pos-print .float-right{
+	float: right;
+}
+#pos-print .float-left{
+	float: left;
+}
+
+@page {
+	margin:0;
+}
+
+#pos-print body{transform: scale(0.9);}
+table {page-break-inside: avoid;}
+html, #pos-print body{
+	width: 80mm;
+	height: 297mm;
+	background: #FFF;
+	overflow:visible;
+}
+#pos-print body{
+	padding-top:0;
+}
+}
