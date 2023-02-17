@@ -10,7 +10,7 @@
         }
     ],
     "require": {
-        "firebase/php-jwt": "^5.0",
+        "firebase/php-jwt": "^6.0",
         "kwn/number-to-words": "^1.6",
         "tecnickcom/tcpdf": "^6.2"
     },
